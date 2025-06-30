@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sai Vineeth Grandhi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sai Vineeth Grandhi</div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience1" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/pc2.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sai Vineeth Grandhi</h1>
+        <p class="section__text__p2">Full Stack Java Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/SaiVineeth_Grandhi.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/saivineeth-g/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/grandhivineeth'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/fsd.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>6+ years <br />Java Full Stack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Masters Degree in Data Science<br />Bachelors Degree in Electronics & Communication</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I’m a results-driven Full-Stack Java Developer with 6+ years of experience building scalable enterprise applications across healthcare, retail, and consumer goods domains. I specialize in backend development using Java, Spring Boot, and microservices, while also delivering dynamic frontends with React and Angular. I have a deep understanding of cloud-native architectures, containerization with Docker and Kubernetes, and CI/CD automation. My expertise extends to working with both SQL and NoSQL databases, message brokers like Kafka, and secure RESTful API design. I’ve led cloud deployments using AWS and Azure, ensuring performance, security, and high availability. I’m passionate about writing clean, maintainable code and solving real-world problems through robust software design. Always eager to learn, mentor, and contribute to high-impact teams.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Technical Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL, PL/SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C, C++</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spring</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+               
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spring MVC</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microservices</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+               
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ReactJS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Servers</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>WebLogic</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+               
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>WebSphere</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tomcat</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JBOSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Testing</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JUnit</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+               
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SOAP</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postman</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Talend API</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Version Control</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+               
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SVN</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Database Environments</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Oracle</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+               
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Project Methodologies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Agile</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+               
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Waterfall</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+        </div>  
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience1'"
+      />
+    </section>
+    
+    <section id="experience1">
+      <p class="section__text__p1">Know My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="details-container">
+            <h2 class="experience-sub-title1">Buffalo Medical Group</h2>
+            <h4 class = "experience-sub-title2">Feb'23 - Present</h4>  
+            <li class = "experience-sub-title3">Led the design and implementation of microservices-based architectures, ensuring scalability and fault tolerance.</li>
+            <li class = "experience-sub-title3">Built scalable microservices using Spring Boot, and Spring Cloud (Eureka, Circuit Breaker, Ribbon) in spring cloud environment.</li>
+            <li class = "experience-sub-title3">Developed RESTful APIs services with API versioning, rate limiting, and authentication protocols.</li>
+            <li class = "experience-sub-title3">Designed and managed containerized applications using Docker and deployed them with Amazon ECS.</li>
+            <li class = "experience-sub-title3">Configured Jenkins for CI/CD pipelines and applied Docker for consistent environments across development and production..</li>
+            <li class = "experience-sub-title3">Leveraged Kubernetes to automate deployments, scaling, and management of containerized applications.</li>
+            <li class = "experience-sub-title3">Used JUnit to test methodologies to ensure code reliability and quality.</li>            
+        </div>
+      </div>
+      <br>
+      <div class="experience-details-container">
+        <div class="details-container">
+            <h2 class="experience-sub-title1">Tata Consultancy Services (PepsiCo)</h2>
+            <h4 class = "experience-sub-title2">Jun'20 - Jul'22</h4>  
+            <li class = "experience-sub-title3">Implemented Routing and HTTP modules for component navigation, invoking RESTful services using GET, POST, PUT, and DELETE..</li>
+            <li class = "experience-sub-title3">Developed and exposed microservices using RESTful APIs with Spring Boot and Spring MVC.</li>
+            <li class = "experience-sub-title3">Built applications using Spring MVC components with dispatch servlets, view resolvers, Request Mapping annotations, and RestController annotations.</li>
+            <li class = "experience-sub-title3">Built Docker images, managed Docker containers, and configured CI/CD pipelines with Jenkins and Maven for the JBoss Application Server.</li>
+            <li class = "experience-sub-title3">Configured Jenkins for CI/CD pipelines and applied Docker for consistent environments across development and production..</li>
+            <li class = "experience-sub-title3">Integrated Oracle as a backend database with Hibernate for efficient Data Access Object (DAO) implementation, using SQL, HQL, and Hibernate Criteria Queries.</li>
+            <li class = "experience-sub-title3">Prepared test cases with JUnit and Easy Mock, executed unit tests and ensured quality during the testing phase.</li>            
+        </div>
+      </div>
+
+      <br>
+      <div class="experience-details-container">
+        <div class="details-container">
+            <h2 class="experience-sub-title1">Tata Consultancy Services (Nestle)</h2>
+            <h4 class = "experience-sub-title2">May'18 - Jun'20</h4>  
+            <li class = "experience-sub-title3">Used J2EE technology to build Multitier Architecture. Business logic details in Struts2 Framework and POJOs.</li>
+            <li class = "experience-sub-title3">Used SPRING ORM module for integration with Hibernate for persistence layer REST web service which produces both XML and JSON to perform tasks, leveraged by both web and mobile applications.</li>
+            <li class = "experience-sub-title3">Implemented MongoDB as a document-oriented database for data storage, enabling flexible data modeling and efficient querying, which supported the application's scalability and performance needs.</li>
+            <li class = "experience-sub-title3">Developed and exposed microservices based on REST APIs utilizing Spring Boot with Spring MVC. All functionality was implemented using the Spring IO platform and Hibernate ORM, allowing for modular, maintainable code and streamlined service interactions.</li>
+            <li class = "experience-sub-title3">Worked on multiple projects, focusing on developing UI components using React, a lightweight JavaScript library that enables the creation of reusable and dynamic user interface elements, thus improving development efficiency.</li>
+            
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:saigrandhi0306@gmail.com">saigrandhi0306@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p>+1 (609) 535-3902</p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/saivineeth-g/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Referred to @John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
